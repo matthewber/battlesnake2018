@@ -33,7 +33,7 @@ def start():
 
         }
 
-@bottle.ppost('/move')
+@bottle.post('/move')
 def move():
     data = bottle.request.json
     directions = ['up', 'down', 'left', 'right']
