@@ -42,10 +42,10 @@ def move():
     # TODO: Do things with data
     
     directions = ['up', 'down', 'left', 'right']
-    direction = random.choice(directions)
+    direction = 'up'
     print direction
     return {
-        'move': direction,
+        'move': 'up',
         'taunt': 'battlesnake-python!'
     }
 
