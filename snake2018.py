@@ -26,10 +26,12 @@ def start():
 
         return {
 
-        'color': '#00FF00',
-        'taunt': '{} ({}x{})'.format(game_id, board_width, board_height),
-        'head_url': https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAdMAAAAJDBlMDJjMjI2LTgyMWItNDc5My1iM2Q4LWQ1NDg2MWQ5YTIwNg.jpg,
-        'name': 'Glegory'
+        "color": "#FF0000",
+         "secondary_color": "#00FF00",
+         "head_url": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAdMAAAAJDBlMDJjMjI2LTgyMWItNDc5My1iM2Q4LWQ1NDg2MWQ5YTIwNg.jpg",
+         "taunt": "I hope I remember how to turn",
+         "head_type": "safe",
+         "tail_type": "skinny"
 
         }
 
