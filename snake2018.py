@@ -26,20 +26,19 @@ def start():
 
         return {
 
-        "color": "#FF0000",
-         "secondary_color": "#00FF00",
-         "head_url": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAdMAAAAJDBlMDJjMjI2LTgyMWItNDc5My1iM2Q4LWQ1NDg2MWQ5YTIwNg.jpg",
-         "taunt": "I hope I remember how to turn",
-         "head_type": "safe",
-         "tail_type": "skinny"
-
+         'color': '#FF0000',
+         'secondary_color': '#00FF00',
+         'head_url': 'https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAdMAAAAJDBlMDJjMjI2LTgyMWItNDc5My1iM2Q4LWQ1NDg2MWQ5YTIwNg.jpg',
+         'taunt': 'I hope I remember how to turn ',
+         'head_type': 'safe',
+         'tail_type': 'skinny'
         }
 
 @bottle.post('/move')
 def move():
     data = bottle.request.json
     directions = ['up', 'down', 'left', 'right']
-    direction = random.choice(directions)
+    direction = 'up' #random.choice(directions)
     print directions
     return {
         'move': direction,
